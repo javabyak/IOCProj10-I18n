@@ -14,6 +14,7 @@ public class SpringI18nTest {
 		//get msg from local specific or base properties file
 		String msg1=ctx.getMessage("welcome.msg",new Object[]{}, locale);
 		String msg2=ctx.getMessage("goodbye.msg",new Object[]{}, locale);
+		System.out.println("_____________________");
 		System.out.println(msg1+" "+msg2);
 		//close container
 		ctx.close();
